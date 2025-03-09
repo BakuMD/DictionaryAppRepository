@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Universal</string>
+    <string name="text_hint">Введите номер слова</string>
+</resources>
