@@ -20,6 +20,9 @@ public interface mainDAO {
     @Query("SELECT * FROM notes ORDER BY id DESC")
     List<Notes> getAll();
 
+    @Query("SELECT * FROM notes ORDER BY RANDOM() LIMIT :count")
+    List<Notes> getRandomWords(int count);
+
     @Query("UPDATE notes SET title = :title, notes = :notes WHERE ID = :id")
     void update(int id, String title, String notes);
 

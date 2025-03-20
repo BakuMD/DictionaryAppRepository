@@ -37,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
     List<Notes> notes = new ArrayList<>();
     SearchView searchView_home;
     Notes selectedNote;
+    FloatingActionButton fab_prove;
 
 
     @Override
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
 
         recyclerView = findViewById(R.id.recycler_home);
         fab_add = findViewById(R.id.fab_add);
+        fab_prove = findViewById(R.id.fab_prove);
 
         searchView_home = findViewById(R.id.searchView_home);
 
@@ -72,6 +74,14 @@ public class MainActivity extends AppCompatActivity implements PopupMenu.OnMenuI
             public boolean onQueryTextChange(String newText) {
                 filter(newText);
                 return false;
+            }
+        });
+
+        fab_prove.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, TestCreateActivity.class);
+                startActivityForResult(intent, 103);
             }
         });
 

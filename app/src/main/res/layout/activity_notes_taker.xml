@@ -8,12 +8,12 @@
     android:layout_height="match_parent"
     tools:context=".NotesTakerActivity"
     android:orientation="vertical"
-    android:background="@color/black">
+    android:background="@color/white">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar_notes"
         app:title="@string/app_name"
-        app:titleTextColor="@color/white"
+        app:titleTextColor="@color/black"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize">
 
@@ -35,26 +35,23 @@
     <EditText
         android:id="@+id/editText_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Title: "
-        android:textColorHint="@color/white"
+        android:layout_height="80dp"
+        android:hint="Введите слово: "
         android:padding="8dp"
         android:textStyle="bold"
         android:textSize="20sp"
-        android:textColor="@color/white"
         android:singleLine="true"
         />
 
     <EditText
         android:id="@+id/editText_notes"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="Enter text: "
-        android:textColorHint="@color/white"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:hint="Введите перевод:  "
         android:padding="8dp"
         android:textStyle="normal"
         android:textSize="17sp"
-        android:textColor="@color/white"
         />
 
 

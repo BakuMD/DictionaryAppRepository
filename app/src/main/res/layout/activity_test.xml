@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90sp"
+        android:id="@+id/otstup"
+        />
+
+    <TextView
+        android:id="@+id/textViewWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/editTextTranslation"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:hint="Введите перевод" />
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:text="Далее"
+        android:textSize="25sp"
+        android:layout_marginHorizontal="85sp"
+        android:layout_marginVertical="45sp" />
+
+</LinearLayout>
