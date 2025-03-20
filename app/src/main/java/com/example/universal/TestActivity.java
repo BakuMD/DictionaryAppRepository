@@ -71,17 +71,17 @@ public class TestActivity extends AppCompatActivity {
     }
 
     private void finishQuiz(int correctAnswers, int totalWords) {
-        // Создаем диалог
+        
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         LayoutInflater inflater = getLayoutInflater();
         View dialogView = inflater.inflate(R.layout.dialog_result, null);
         builder.setView(dialogView);
 
-        // Находим TextView и Button в диалоговом окне
+        
         TextView textResult = dialogView.findViewById(R.id.text_result);
         Button buttonClose = dialogView.findViewById(R.id.button_close);
 
-        // Устанавливаем текст результата
+        
         String resultText = "Правильные переводы: " + correctAnswers + "/" + totalWords;
         textResult.setText(resultText);
         if ((1 - (double) correctAnswers /totalWords) <= 0.25) {
@@ -92,7 +92,7 @@ public class TestActivity extends AppCompatActivity {
             textResult.setTextColor(Color.RED);
         }
 
-        // Создаем диалог
+        
         AlertDialog dialog = builder.create();
 
         buttonClose.setOnClickListener(new View.OnClickListener() {
